@@ -1,0 +1,31 @@
+footer{
+    
+    height: 30vh;
+}
+
+.boxSocial{
+    
+    background-color:  #005695;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    nav{
+        width: 18vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.boxEnd{
+    background-color: #232020;
+    color: white;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
