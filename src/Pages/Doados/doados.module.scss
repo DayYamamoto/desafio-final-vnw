@@ -26,3 +26,31 @@
         border-radius: 15px;
     }
 }
+
+@media(max-width: 1000px){
+    .boxDoados{
+        
+        justify-content: space-around;
+    }
+
+    .boxCard{
+        
+        article{
+            width: 200px;
+            height: 250px;
+        }
+    }
+}
+
+@media(max-width: 510px){
+    .boxCard{
+        flex-wrap: wrap;
+        gap: 15px;
+        height: auto;
+    }
+
+    .boxDoados{
+        height: auto;
+        padding-bottom: 20px;
+    }
+}

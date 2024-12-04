@@ -52,3 +52,56 @@
         }
     }
 }
+
+@media(max-width: 1280px){
+    
+    
+    .container{
+        
+        form{
+            width: 325px;
+            input{
+                width: 270px;
+            }
+            .doar{
+                width: 120px;
+            }
+        }
+    }
+}
+
+@media(max-width: 845px){
+    .container{
+        h2{
+            
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width:400px){
+    .container{
+        h2{
+            font-size: 5vw;
+        }
+        form{
+            width: 80vw;
+            input{
+                width: 80%;
+            }
+            .doar{
+                width: 30vw;
+            }
+            div{
+                h3{
+                    font-size: 5.5vw;
+                }
+                img{
+                    width: 12vw;
+                }
+            }
+        }
+    }
+    
+}
