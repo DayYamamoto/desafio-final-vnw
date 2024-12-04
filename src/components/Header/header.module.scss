@@ -10,14 +10,15 @@ header{
 }
 
 .boxLogo{
-
-    
     width: 18vw;
     display: flex;
-    color: white;
     align-items: center;
     height: 14vh;
     justify-content: space-evenly;
+    h1{
+        color: white;
+        font-size: 25px;
+    }
 }
 
 .boxMenu{
@@ -27,9 +28,9 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-size: 20px;
         a{
             color: white;
-            font-size: 20px;
         }
     }
 }
@@ -49,8 +50,63 @@ header{
         border: none;
         color: white;
         font-size: 15px;
+        padding-left: 6px;
+        width: 12vw;
         &::placeholder{
             color: white;
+        }
+    }
+}
+
+@media(max-width: 1429px){
+
+    .boxLogo{
+        width: 25vw;
+        h1{
+            font-size: 2vw;
+        }
+        img{
+            width: 5vw;
+        }
+    }
+    .boxInput{
+        input{
+            &::placeholder{
+                font-size: 1vw;
+            }
+        }
+        
+    }
+    .boxMenu{
+        ul{
+            font-size: 1.6vw;
+        }
+    }
+}
+
+@media (max-width:780px){
+    header{
+        flex-direction: column;
+        height: 20vh;
+        justify-content: space-evenly;
+    }
+    .boxInput{
+        display: none;
+    }
+    .boxLogo{
+        width: 80%;
+        h1{
+            font-size: 25px;
+        }
+        img{
+            width: 70px;
+        }
+    }
+    .boxMenu{
+        width: 100%;
+        ul{
+            justify-content: space-evenly;
+            font-size: 20px;
         }
     }
 }
