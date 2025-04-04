@@ -9,8 +9,13 @@ export default function Doados(){
     const [livros, setLivros] = useState([])
     
     const getLivros = async () => {
-        const response = await axios.get("https://desafio-2-api-livros.onrender.com/livros")
+        try{
+            const response = await axios.get("https://desafio-2-api-livros.onrender.com/livros")
         setLivros(response.data)
+        } catch (error){
+            console.error("Erro, livro não encontrado", error)
+        }
+        
     }
 
     useEffect(()=>{

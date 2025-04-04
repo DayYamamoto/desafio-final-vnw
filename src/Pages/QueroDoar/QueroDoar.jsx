@@ -3,7 +3,7 @@ import S from './queroDoar.module.scss'
 import Livro from '../../assets/livroIcone.png'
 import axios from 'axios'
 import { useState } from 'react'
-import { use } from 'react'
+
 
 
 export default function QueroDoar(){
